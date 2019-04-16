@@ -3,9 +3,16 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
+ 
+/*
+Color palette 
+https://colorhunt.co/palette/138663
+*/
+
 body {
-  /* background-image: url() no-repeat center center fixed; */
   background-color: #343a40;
+  background-image: linear-gradient(to right, #233142, #4f9da6);
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -14,6 +21,14 @@ body {
   color: #eee;
 }
 
+a, a:hover {
+  color: #facf5a;
+}
+
 section {
   margin-top: 50px;
+}
+
+.navbar-nav li.nav-item:first-child a.nav-link {
+    padding-left: 0;
 }
