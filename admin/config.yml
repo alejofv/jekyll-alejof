@@ -4,7 +4,7 @@ permalink: config.yml
 
 backend:
   name: github
-  repo: alexphi/alejof-netlifycms # Path to your GitHub repository
+  repo: alexphi/jekyll-alejof # Path to your GitHub repository
 
 media_folder: "assets/img/uploads" # Media files will be stored in the repo under images/uploads
 collections:
