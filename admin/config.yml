@@ -1,3 +1,7 @@
+---
+permalink: config.yml
+---
+
 backend:
   name: github
   repo: alexphi/alejof-netlifycms # Path to your GitHub repository
