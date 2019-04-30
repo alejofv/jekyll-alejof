@@ -10,8 +10,8 @@ https://colorhunt.co/palette/138663
 */
 
 body {
-  background-color: #343a40;
-  background-image: linear-gradient(to right, #233142, #4f9da6);
+  background-color: #233142;
+  background-image: linear-gradient(to right, #233142, #343a40);
   
   -webkit-background-size: cover;
   -moz-background-size: cover;
