@@ -41,16 +41,6 @@ h1,h2,h3,h4,h5 {
   max-height: 50px;
 }
 
-@media (min-width: 768px) {
-  body {
-    background-image: linear-gradient(to right, #233142, #536376);
-  }
-  
-  .header-img img {
-  max-height: 100px;
-  }
-}
-
 a, a:hover {
   color: #facf5a;
 }
@@ -61,4 +51,22 @@ a, a:hover {
 
 .navbar-nav li.nav-item:first-child a.nav-link {
   padding-left: 0;
+}
+
+.content-column {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: linear-gradient(to right, #233142, #536376);
+  }
+  
+  .header-img img {
+    max-height: 100px;
+  }
+  
+  .content-column {
+    margin-top: 0px;
+  }
 }
