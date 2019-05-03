@@ -9,6 +9,9 @@ Color palette
 https://colorhunt.co/palette/138663
 */
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans');
+
 body {
   background-color: #233142;
   
@@ -18,6 +21,20 @@ body {
   -o-background-size: cover;
   
   color: #eee;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Abel', sans-serif;
+}
+
+.navbar-dark {
+  background-color: #233142;
+}
+
+.nav-link {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
 }
 
 .header-img img {
@@ -30,7 +47,7 @@ body {
   }
   
   .header-img img {
-    max-height: 100px;
+  max-height: 100px;
   }
 }
 
@@ -43,5 +60,5 @@ a, a:hover {
 }
 
 .navbar-nav li.nav-item:first-child a.nav-link {
-    padding-left: 0;
+  padding-left: 0;
 }
