@@ -67,6 +67,7 @@ a, a:hover {
   }
   
   .content-column {
-    margin-top: 0px;
+    margin-top: -110px;
+    padding-bottom: 50px;
   }
 }
