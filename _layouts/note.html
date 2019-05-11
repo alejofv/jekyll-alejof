@@ -11,7 +11,7 @@ layout: default
         <p>See the most <a href="/notes">recent notes</a>, or take a look at the <a href="/archive">archive</a>.</p>
     </div>
     <div class="col-lg-1"></div>
-    <div class="col-lg-5 note-column">
+    <div class="col-lg-5 content-column">
         <h2>{{ page.title }}</h2>
         <div class="note-meta">
             {{ page.date | date: "%b %-d, %Y" }}
@@ -20,7 +20,7 @@ layout: default
             {%- endif -%}
         </div>
 
-        <div class="note">
+        <div class="note-content">
             {{content}}
         </div>
     </div>

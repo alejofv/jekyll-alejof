@@ -4,7 +4,7 @@ title: Notes
 permalink: /notes/
 header: My Notes
 description: >- # this means to ignore newlines until "baseurl:"
-  <p>By Alejandro Figueroa</p>
+  <p>by Alejandro Figueroa</p>
   <p>
   Here is the most recent stuff that I've written, plus links to interesting things that I find on the internet. This is actually one of my side-projects - a minimal(ish) blog engine.
   </p>
@@ -16,15 +16,15 @@ description: >- # this means to ignore newlines until "baseurl:"
 {% for post in site.posts %}
   
 {%- if post.date != last_date -%}
-<div class="note-date">
+<div class="note-meta">
 {{ post.date | date: "%b %-d, %Y" }}
 </div>
 {%- endif -%}
     
 <div class="note note-{{post.type}}">
-  <h2>
+  <h3>
     <a class="note-title" href="{{ post.url }}">{{ post.title }}</a>
-  </h2>
+  </h3>
 {%- if post.type == "link" -%}
     <div class="note-source">
       From <a href="{{ post.sourceUrl }}">{{ post.sourceName }}</a>
