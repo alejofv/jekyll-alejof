@@ -54,7 +54,13 @@ a, a:hover {
 }
 
 .content-column {
-  margin-top: 50px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.note-column {
+  margin-top: 20px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -65,9 +71,52 @@ a, a:hover {
   .header-img img {
     max-height: 100px;
   }
-  
+}
+
+@media (min-width: 992px) {
   .content-column {
-    margin-top: -110px;
-    padding-bottom: 50px;
+    margin-top: -135px;
   }
+  
+  .note-column {
+    margin-top: -105px;
+  }
+}
+
+/* Notes section */
+
+.note {
+  padding: 25px 0;
+}
+
+.note h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.note-source {
+  margin: -10px 0 16px;
+  font-size: 0.8em;
+}
+
+.note-source a {
+  color: rgba(255,255,255,.5);
+}
+
+.note-date {
+  margin-top: 25px;
+  color: rgba(255,255,255,.5);
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
+}
+
+.note-meta {
+  color: rgba(255,255,255,.5);
+  font-size: 0.8em;
+}
+
+blockquote {
+  margin-left: 5px;
+  padding-left: 10px;
 }

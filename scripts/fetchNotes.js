@@ -32,9 +32,10 @@ const fs = require("fs");
         const filename = `${note.date}-${note.slug}`; 
         const content = `---
 layout: note
-title: ${note.title}
-type: ${note.type}
-source: "${note.source}"
+title: "${note.title}"
+type: "${note.type}"
+sourceUrl: "${note.sourceUrl || ''}"
+sourceName: "${note.sourceName || ''}" 
 ---
 
 ${note.text}
