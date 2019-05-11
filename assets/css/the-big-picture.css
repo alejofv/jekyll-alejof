@@ -54,7 +54,8 @@ a, a:hover {
 }
 
 .content-column {
-  margin-top: 50px;
+  margin-top: 20px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -65,8 +66,46 @@ a, a:hover {
   .header-img img {
     max-height: 100px;
   }
-  
+}
+
+@media (min-width: 992px) {
   .content-column {
-    margin-top: 0px;
+    margin-top: -105px;
   }
+}
+
+/* Notes section */
+
+.note {
+  padding: 30px 0;
+}
+
+.note h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.note-source {
+  margin-bottom: 1rem;
+  font-size: 0.8em;
+}
+
+.note-meta {
+  font-size: 0.8em;
+  margin-bottom: 1rem;
+}
+
+.note-source a,
+.note-date,
+.note-meta {
+  color: rgba(255,255,255,.5);
+}
+
+.note-content {
+  padding: 20px 0 0 0;
+}
+
+blockquote {
+  margin-left: 5px;
+  padding-left: 10px;
 }

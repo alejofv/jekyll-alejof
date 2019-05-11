@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-lg-5">
+        <h1>My Notes</h1>
+        <p>
+            by Alejandro Figueroa
+        </p>
+        <p>See the most <a href="/notes">recent notes</a>, or take a look at the <a href="/archive">archive</a>.</p>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5 content-column">
+        <h2>{{ page.title }}</h2>
+        <div class="note-meta">
+            {{ page.date | date: "%b %-d, %Y" }}
+            {%- if page.type == "link" -%}
+            &nbsp; &bull; &nbsp;<a href="{{ page.sourceUrl }}">{{ page.sourceName }}</a>
+            {%- endif -%}
+        </div>
+
+        <div class="note-content">
+            {{content}}
+        </div>
+    </div>
+</div>
