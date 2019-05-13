@@ -1,0 +1,3 @@
+[build]
+  command = "npm install && node ./scripts/fetchNotes.js && jekyll build"
+  publish = "_site/"
