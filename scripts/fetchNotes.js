@@ -50,10 +50,12 @@ ${note.text}
 (async () => {
     // Netlify build webhook for starkidsworld.co site
     const apiUrl = process.env.CONTENT_API_URL || "http://localhost:7071/api/content";
-    console.log('Content api url:' + apiUrl)
+    console.log('Content api url:' + apiUrl);
+    
+    const apiKey = process.env.CONTENT_API_KEY;
     
     // fetch the live data source
-    const response = await fetch(apiUrl);
+    const response = await fetch(`${apiUrl}?code=${apiKey}`);
     if (response.status !== 200) {
         throw new Error("Invalid response status: " + response.status);
     }
