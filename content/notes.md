@@ -27,7 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   </h3>
 {%- if post.type == "link" -%}
     <div class="note-source">
-from <a href="{{ post.sourceUrl }}" target=“_blank”>{{ post.sourceName }}</a>
+      from <a href="{{ post.sourceUrl }}" target="_blank">{{ post.sourceName }}</a>
     </div>
 {%- endif -%}
       
