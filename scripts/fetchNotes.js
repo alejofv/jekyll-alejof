@@ -31,10 +31,18 @@ function initDir(dir_path) {
         fs.mkdirSync(dir_path);
 }
 
-function createPost(note) {
+async function createPost(note) {
+    const response = await fetch(`${note.contentUrl}`);
+    if (response.status !== 200) {
+        console.log(`could not get content for note: ${note.title}`);
+        return;
+    }
+
+    const content = await response.text()
+    
     // foreach post, write a post file to be processed by Jekyll
     const filename = `${note.date}-${note.slug}`;
-    const content = `---
+    const fileContent = `---
 layout: note
 title: "${note.title}"
 type: "${note.type}"
@@ -42,9 +50,10 @@ sourceUrl: "${note.sourceUrl || ''}"
 sourceName: "${note.sourceName || ''}" 
 ---
 
-${note.text}
+${content}
 `;
-    fs.writeFileSync(`./_posts/${filename}.md`, content);
+    
+    fs.writeFileSync(`./_posts/${filename}.md`, fileContent);
 }
 
 (async () => {
@@ -69,7 +78,7 @@ ${note.text}
     for (let i = 0; i < data.length; i++) {
         const note = data[i];
         
-        createPost(note);
+        await createPost(note);
     }
 
     console.info('Content fetch completed successfully!')
