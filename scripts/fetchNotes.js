@@ -58,7 +58,7 @@ ${content}
 
 (async () => {
     // Netlify build webhook for starkidsworld.co site
-    const apiUrl = process.env.CONTENT_API_URL || "http://localhost:7071/api/content";
+    const apiUrl = `${process.env.CONTENT_API_URL || "http://localhost:7071/api/content"}/alejof-notes`;
     console.log('Content api url:' + apiUrl);
     
     const apiKey = process.env.CONTENT_API_KEY;
