@@ -59,10 +59,7 @@ a, a:hover {
 }
 
 @media (min-width: 768px) {
-  body {
-    background-image: linear-gradient(to right, #233142, #536376);
-  }
-  
+
   .header-img img {
     max-height: 100px;
   }
