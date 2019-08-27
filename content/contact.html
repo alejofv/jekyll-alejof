@@ -12,22 +12,22 @@ permalink: /contact
             <div class="col-sm-10 mx-auto">
                 <form method="post" action="/contact/ty" name="contact" netlify netlify-honeypot="itsatrap">
                     <div class="form-label-group">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Your Email address" required autofocus>
+                        <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Your Email address" required autofocus>
                         <label for="inputEmail">Email address</label>
                     </div>
 
                     <div class="form-label-group">
-                        <input type="text" id="inputName" class="form-control" placeholder="Your name" required> 
+                        <input type="text" id="inputName" name="inputName" class="form-control" placeholder="Your name" required> 
                         <label for="inputName">Name</label>
                     </div>
                     
                     <div class="form-label-group" style="display: none;">
-                        <input type="text" id="itsatrap" class="form-control" placeholder="Leave this field empty" />
+                        <input type="text" id="itsatrap" name="itsatrap" class="form-control" placeholder="Leave this field empty" />
                         <label for="itsatrap">Leave this field empty</label>
                     </div>
                     
                     <div class="form-label-group">
-                        <textarea type="text" id="inputMessage" class="form-control" placeholder="Your message" required></textarea>
+                        <textarea type="text" id="inputMessage" name="inputMessage" class="form-control" placeholder="Your message" required></textarea>
                         <label for="inputMessage">Message</label>
                     </div>
 
