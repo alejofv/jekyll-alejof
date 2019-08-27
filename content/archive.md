@@ -2,10 +2,8 @@
 layout: double
 title: Archive
 permalink: /archive/
-header: My Notes
 description: >- # this means to ignore newlines until "baseurl:"
-  <p>by Alejandro Figueroa</p>
-  <p>See the most <a href="/notes">recent notes</a>.</p>
+  <p>See the most <a href="/">recent notes</a>.</p>
 ---
 
 {% if site.posts.size > 0 %}

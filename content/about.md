@@ -1,15 +1,17 @@
 ---
 layout: single
 title: About
-permalink: /about/
+permalink: /about
 ---
-
-# About Me
 
 Hello, my name is Alejandro Figueroa, but most of the people I work with just call me Alejo.
 
-I'm a software developer who focus on building .NET apps but also try to work on/play with different technologies, most of them related to web sites, APIs and backends.
+I'm a software developer with a focus on building .NET apps, but I also try to work on (or play with) different technologies, most of them related to web sites, APIs and backends. The list so far covers bits of Javascript (Node, Vue), Java, Python and Go.
 
 You can find some of the code I've written at my [GitHub][github] profile.
 
+<span class="small">This site was built using Jekyll with the "Big Picture" template from [Start Bootstrap][bootstrap]. The Notes content is pulled from the [alejof-notes-api][notes-api] (one of my side projects that serves as a minimal-ish headless blog engine).</span>
+
 [github]:https://github.com/alexphi
+[notes-api]:https://github.com/alexphi/alejof-notes-api
+[bootstrap]:https://startbootstrap.com/template-overviews/the-big-picture

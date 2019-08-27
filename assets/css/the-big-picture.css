@@ -53,6 +53,10 @@ a, a:hover {
   padding-left: 0;
 }
 
+.main-column {
+  padding-bottom: 50px;
+}
+
 .content-column {
   margin-top: 20px;
   padding-bottom: 50px;

@@ -16,7 +16,7 @@
 title: AlejoF.dev
 email: alexphi@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Alejandro Figueroa - Software developer
+  Links to interesting things that I find on the internet, and some stuff that I've written.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alejof.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alexphi
