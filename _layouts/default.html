@@ -63,11 +63,18 @@
 
     <!-- Page Content -->
     <div class="container container-main">
-        <p class="header-img">
-            <img src="https://blob.alejof.dev/assets/code-icon.png">
-        </p>
-        <h1>AlejoF.dev</h1>
-        {{content}}
+        <div class="row">
+            <div class="col-lg-3 col-md-4 sidebar">
+                <p class="header-img">
+                    <img src="https://blob.alejof.dev/assets/code-icon.png">
+                </p>
+                <p class="title">{{site.title}}</p>
+                <p>{{site.description}}</p>
+            </div>
+            <div class="col-md-8 content">
+                {{content}}
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->

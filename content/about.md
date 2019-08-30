@@ -1,6 +1,6 @@
 ---
-layout: single
-title: About
+layout: page
+title: About Me
 permalink: /about
 ---
 
@@ -10,7 +10,9 @@ I'm a software developer with a focus on building .NET apps, but I also try to w
 
 You can find some of the code I've written at my [GitHub][github] profile.
 
-<span class="small">This site was built using Jekyll with the "Big Picture" template from [Start Bootstrap][bootstrap]. The Notes content is pulled from the [alejof-notes-api][notes-api] (one of my side projects that serves as a minimal-ish headless blog engine).</span>
+---
+
+This site was built using Jekyll and the "Big Picture" template from [Start Bootstrap][bootstrap]. The Notes content is pulled from the [alejof-notes-api][notes-api] (one of my side projects that serves as a minimal-ish headless blog engine).
 
 [github]:https://github.com/alexphi
 [notes-api]:https://github.com/alexphi/alejof-notes-api

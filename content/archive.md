@@ -1,5 +1,5 @@
 ---
-layout: double
+layout: list
 title: Archive
 permalink: /archive/
 description: >- # this means to ignore newlines until "baseurl:"
