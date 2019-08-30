@@ -1,6 +1,6 @@
 ---
-layout: double
-title: Notes
+layout: list
+title: Recent Notes
 permalink: /
 description: >- # this means to ignore newlines until "baseurl:"
   <p>Older content is found in the <a href="/archive">archive</a>.
@@ -9,30 +9,20 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 {% if site.posts.size > 0 %}
 {% for post in site.posts %}
-  
-{%- if post.date != last_date -%}
-<div class="note-meta">
-{{ post.date | date: "%b %-d, %Y" }}
-</div>
-{%- endif -%}
-    
+
 <div class="note note-{{post.type}}">
-  <h3>
-    <a class="note-title" href="{{ post.url }}">{{ post.title }}</a>
-  </h3>
+  <h2>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h2>
 {%- if post.type == "link" -%}
     <div class="note-source">
-      from <a href="{{ post.sourceUrl }}" target="_blank">{{ post.sourceName }}</a>
+      from <a href="{{ post.sourceUrl }}" target="_blank">{{ post.sourceName }} &nbsp;<i class="fas fa-external-link-alt"></i></a>
     </div>
 {%- endif -%}
-      
-  <div class="note-content">
     <div markdown="1">
 {{ post.content }}
 </div>
 </div>
-</div>
-    
-{%- assign last_date = post.date -%}
+
 {% endfor %}
 {% endif %}

@@ -2,23 +2,16 @@
 layout: default
 ---
 
-<div class="row">
-    <div class="col-lg-5">
-        <p>{{site.description}}</p>
-        <p>See the most <a href="/">recent notes</a>, or take a look at the <a href="/archive">archive</a>.</p>
+<div class="page-title">
+    <h1>{{page.title}}</h1>
+    <div class="note-meta">
+        {{page.date | date: "%b %-d, %Y"}}
+        {%- if page.type == "link" -%}
+        &nbsp; &bull; &nbsp;<a href="{{page.sourceUrl}}" target="_blank">{{page.sourceName}} &nbsp;<i class="fas fa-external-link-alt"></i></a>
+        {%- endif -%}
     </div>
-    <div class="col-lg-1 main-column"></div>
-    <div class="col-lg-5 content-column">
-        <h2>{{page.title}}</h2>
-        <div class="note-meta">
-            {{page.date | date: "%b %-d, %Y"}}
-            {%- if page.type == "link" -%}
-            &nbsp; &bull; &nbsp;<a href="{{page.sourceUrl}}" target="_blank">{{page.sourceName}}</a>
-            {%- endif -%}
-        </div>
+</div>
 
-        <div class="note-content">
-            {{content}}
-        </div>
-    </div>
+<div class="note-content">
+    {{content}}
 </div>

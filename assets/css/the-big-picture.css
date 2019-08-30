@@ -25,7 +25,12 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-  font-family: 'Abel', sans-serif;
+  font-weight: 700;
+}
+
+hr {
+  border-color: #aaa;
+  margin: 34px;
 }
 
 .navbar-dark {
@@ -47,31 +52,56 @@ a, a:hover {
 
 .container-main {
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 .navbar-nav li.nav-item:first-child a.nav-link {
   padding-left: 0;
 }
 
-.main-column {
-  padding-bottom: 50px;
+.content {
+  margin-top: 50px;
 }
 
-.content-column {
-  margin-top: 20px;
-  padding-bottom: 50px;
+.content .title {
+  font-weight: 700;
+  font-size: 1.3em;
+  padding-bottom: 10px;
+  border-bottom: solid 2px rgba(255,255,255,.3);
+  margin-bottom: 30px;
+}
+
+.content h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+
+.sidebar {
+  font-size: 0.9em;
+}
+
+.sidebar .title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.sidebar .links {
+  margin-top: 3em;
 }
 
 @media (min-width: 768px) {
-
   .header-img img {
     max-height: 100px;
   }
-}
-
-@media (min-width: 992px) {
-  .content-column {
-    margin-top: -105px;
+  
+  .content {
+    margin-top: 0px;
+    padding-left: 50px;
   }
 }
 
@@ -82,8 +112,7 @@ a, a:hover {
 }
 
 .note h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .note-source {
@@ -94,6 +123,10 @@ a, a:hover {
 .note-meta {
   font-size: 0.8em;
   margin-bottom: 1rem;
+}
+
+.note-meta i {
+  font-size: 0.8em;
 }
 
 .note-source a,
@@ -109,7 +142,7 @@ a, a:hover {
 blockquote {
   margin-left: 5px;
   padding-left: 15px;
-  border-left: solid 5px rgba(255,255,255,.3);
+  border-left: solid 5px #aaa;
   font-family: 'Abel', sans-serif;
   font-size: 1.1em;
 }
