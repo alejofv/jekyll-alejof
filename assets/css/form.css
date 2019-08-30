@@ -3,6 +3,10 @@
   --input-padding-y: 0.75rem;
 }
 
+.login {
+  margin-top: 50px;
+}
+
 .login-heading {
   font-weight: 300;
 }

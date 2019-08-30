@@ -16,8 +16,8 @@
 title: Alejo F (dev)
 email: alexphi@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  <p>Software developer and DotNet fan.</p>
-  <p>I post links to interesting things on the internet.</p>
+  <p>Software developer and .NET fan.</p>
+  <p>I post links and comments to interesting things on the internet.</p>
   <p>Sometimes I write stuff.</p>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alejof.dev" # the base hostname & protocol for your site, e.g. http://example.com
