@@ -12,7 +12,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 <div class="note note-{{post.type}}">
   <h2>
-    <a class="note-title" href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url }}">{{ post.title }}</a>
   </h2>
 {%- if post.type == "link" -%}
     <div class="note-source">

@@ -111,9 +111,8 @@ a, a:hover {
   padding: 30px 0;
 }
 
-.note h1 {
-  font-size: 20px;
-  margin-bottom: 20px;
+.note h2 {
+  margin-bottom: 5px;
 }
 
 .note-source {
