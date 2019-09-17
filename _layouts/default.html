@@ -26,7 +26,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-bottom">
+    <nav class="navbar navbar-expand-md navbar-light fixed-bottom">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
@@ -66,11 +66,11 @@
         <div class="row">
             <div class="col-lg-3 col-md-4 sidebar">
                 <p class="header-img">
-                    <img src="https://blob.alejof.dev/assets/code-icon.png">
+                    <img src="https://blob.alejof.dev/assets/code-icon-light.png">
                 </p>
                 <p class="title">{{site.title}}</p>
                 <p>{{site.description}}</p>
-                <div class="links">
+                <div class="links d-none d-sm-block">
                     <p><i class="fas fa-map-marker-alt"></i> &nbsp;Bogotá, CO</p>
                     <p><a href="https://github.com/{{site.github_username}}"><i class="fab fa-github"></i> &nbsp;GitHub</a></p>
                     <p><a href="https://twitter.com/{{site.twitter_username}}"><i class="fab fa-twitter"></i> &nbsp;Twitter</a></p>
@@ -78,6 +78,14 @@
             </div>
             <div class="col-md-8 content">
                 {{content}}
+            </div>
+        </div>
+        <div class="footer d-block d-sm-none my-5">
+            <p class="title">{{site.title}}</p>
+            <div vlass="links">
+                <p><i class="fas fa-map-marker-alt"></i> &nbsp;Bogotá, CO</p>
+                <p><a href="https://github.com/{{site.github_username}}"><i class="fab fa-github"></i> &nbsp;GitHub</a></p>
+                <p><a href="https://twitter.com/{{site.twitter_username}}"><i class="fab fa-twitter"></i> &nbsp;Twitter</a></p>
             </div>
         </div>
     </div>

@@ -6,21 +6,21 @@
  
 /*
 Color palette 
-https://colorhunt.co/palette/138663
+https://colorhunt.co/palette/151976
 */
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans');
 
 body {
-  background-color: #233142;
+  background-color: #fff;
   
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   
-  color: #eee;
+  color: #333;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -28,13 +28,39 @@ h1,h2,h3,h4,h5 {
   font-weight: 700;
 }
 
+a, a:hover {
+  color: #216583;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #216583;
+  border-bottom: solid 3px #f76262;
+}
+
+h2 a {
+  color: #216583;
+}
+
+h2 a:hover {
+  border-bottom: none;
+}
+
 hr {
-  border-color: #aaa;
+  border-color: #216583;
   margin: 34px;
 }
 
-.navbar-dark {
-  background-color: #233142;
+blockquote {
+  margin-left: 5px;
+  padding-left: 15px;
+  border-left: solid 5px #fff1c1;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1em;
+}
+
+.navbar-light {
+  background-color: #ffffff;
 }
 
 .nav-link {
@@ -42,12 +68,18 @@ hr {
   font-size: 1.2em;
 }
 
-.header-img img {
-  max-height: 50px;
+.navbar-light .navbar-nav a.nav-link {
+  color: #393e46;
+  font-weight: 800;
 }
 
-a, a:hover {
-  color: #facf5a;
+.navbar-light .navbar-nav a.nav-link:hover {
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.header-img img {
+  max-height: 50px;
 }
 
 .container-main {
@@ -67,12 +99,12 @@ a, a:hover {
   font-weight: 700;
   font-size: 1.3em;
   padding-bottom: 10px;
-  border-bottom: solid 2px rgba(255,255,255,.3);
+  border-bottom: solid 2px #929aab;
   margin-bottom: 30px;
 }
 
 .content h2 {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
@@ -94,7 +126,24 @@ a, a:hover {
   margin-top: 3em;
 }
 
+.footer {
+  font-size: 0.9em;
+}
+
+.footer .title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.footer .links {
+  margin-top: 3em;
+}
+
 @media (min-width: 768px) {
+  .navbar-light {
+    background-color: transparent;
+  }
+
   .header-img img {
     max-height: 100px;
   }
@@ -102,6 +151,10 @@ a, a:hover {
   .content {
     margin-top: 0px;
     padding-left: 50px;
+  }
+  
+  .content h2 {
+    margin-top: 50px;
   }
 }
 
@@ -129,20 +182,6 @@ a, a:hover {
   font-size: 0.8em;
 }
 
-.note-source a,
-.note-date,
-.note-meta {
-  color: rgba(255,255,255,.5);
-}
-
 .note-content {
   padding: 20px 0 0 0;
-}
-
-blockquote {
-  margin-left: 5px;
-  padding-left: 15px;
-  border-left: solid 5px #aaa;
-  font-family: 'Abel', sans-serif;
-  font-size: 1.1em;
 }

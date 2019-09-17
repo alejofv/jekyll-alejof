@@ -30,7 +30,7 @@
   padding: var(--input-padding-y) var(--input-padding-x);
   height: auto;
   border-radius: 0;
-  color: #fff;
+  color: #393e46;
   background: transparent;
 }
 
@@ -47,9 +47,8 @@
 .form-label-group>input:active,
 .form-label-group>textarea:focus,
 .form-label-group>textarea:active {
-    border-color: #facf5a;
+    border-color: #929aab;
     box-shadow: none;
-    color: #fff;
     background: transparent;
 }
 
@@ -63,7 +62,7 @@
   /* Override default `<label>` margin */
   line-height: 1.5;
   cursor: text;
-  color: #aaa;
+  color: #929aab;
   /* Match the input under the label */
   border: 1px solid transparent;
   border-radius: .25rem;
@@ -106,21 +105,21 @@
   padding-top: calc(var(--input-padding-y) / 3);
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
-  color: #aaa;
+  color: #929aab;
 }
 
 .login .btn-primary {
     background-color: transparent;
-    color: #facf5a;
-    border-color: #facf5a;
+    color: #393e46;
+    border-color: #393e46;
 }
 
 .login .btn-primary:active,
 .login .btn-primary:focus,
 .login .btn-primary:not(:disabled):not(.disabled):active {
-    background-color: #facf5a;
+    background-color: #393e46;
     color: #fff;
-    border-color: #facf5a;
+    border-color: #393e46;
     box-shadow: none;
 }
 
@@ -133,7 +132,7 @@
   }
   .form-label-group input::-ms-input-placeholder,
   .form-label-group textarea::-ms-input-placeholder {
-    color: #aaa;
+    color: #929aab;
   }
 }
 
@@ -147,6 +146,6 @@
   }
   .form-label-group input:-ms-input-placeholder,
   .form-label-group textarea:-ms-input-placeholder {
-    color: #aaa;
+    color: #929aab;
   }
 }
