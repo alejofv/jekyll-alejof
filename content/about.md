@@ -10,6 +10,8 @@ I'm a software developer with a focus on building .NET apps, but I also try to w
 
 You can find some of the code I've written at my [GitHub][github] profile.
 
+<img src="https://blob.alejof.dev/assets/profile.jpg" class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover">
+
 ## About this site
 
 This site was built using Jekyll and the "Big Picture" template from [Start Bootstrap][bootstrap].
