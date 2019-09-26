@@ -45,9 +45,9 @@ async function createPost(note) {
     const fileContent = `---
 layout: note
 title: "${note.title}"
-type: "${note.type}"
-sourceUrl: "${note.sourceUrl || ''}"
-sourceName: "${note.sourceName || ''}" 
+type: "${note.data.Type}"
+sourceUrl: "${note.data.Source || ''}"
+sourceName: "${note.data.SourceName || ''}" 
 ---
 
 ${content}
