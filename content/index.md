@@ -2,9 +2,7 @@
 layout: list
 title: Recent Notes
 permalink: /
-description: >- # this means to ignore newlines until "baseurl:"
-  <p>Older content is found in the <a href="/archive">archive</a>.
-
+description: Older content is found in the <a href="/archive">archive</a>.
 ---
 
 {% if site.posts.size > 0 %}

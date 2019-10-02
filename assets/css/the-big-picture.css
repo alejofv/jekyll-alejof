@@ -103,6 +103,12 @@ blockquote {
   margin-bottom: 30px;
 }
 
+.content .subtitle {
+  font-size: 0.8em;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
 .content h2 {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -152,10 +158,6 @@ blockquote {
     margin-top: 0px;
     padding-left: 50px;
   }
-  
-  .content h2 {
-    margin-top: 50px;
-  }
 }
 
 /* Notes section */
@@ -166,6 +168,13 @@ blockquote {
 
 .note h2 {
   margin-bottom: 5px;
+}
+
+.note-title {
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: inline-block;
 }
 
 .note-source {
@@ -181,4 +190,3 @@ blockquote {
 .note-meta i {
   font-size: 0.8em;
 }
-
