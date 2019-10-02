@@ -1,9 +1,13 @@
 ---
 layout: about
-title: About Me
+title: Alejo F
 permalink: /about
 pictureUrl: https://blob.alejof.dev/assets/profile.jpg
 ---
+
+**TL;DR: I make websites and APIs**
+
+## About me
 
 Hello, my name is Alejandro Figueroa, but most of the people I work with just call me Alejo.
 
@@ -15,8 +19,11 @@ You can find some of the code I've written at my [GitHub][github] profile.
 
 This site was built using Jekyll and the "Big Picture" template from [Start Bootstrap][bootstrap].
 
-The Notes content is pulled from the [alejof-notes-api][notes-api] before the Jekyll build. The Notes API is one of my side projects that serves as a minimal-ish headless blog engine.
+The main section content is managed using a separate site and pulled by Jekyll using an API I built myself (basically, a super-minimal blog engine).
+
+Check out the code for the [notes api][notes-api] and the [web app][notes-app].
 
 [github]:https://github.com/alexphi
 [notes-api]:https://github.com/alexphi/alejof-notes-api
+[notes-app]:https://github.com/alexphi/alejof-notes-app
 [bootstrap]:https://startbootstrap.com/template-overviews/the-big-picture

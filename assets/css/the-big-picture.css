@@ -10,7 +10,7 @@ https://colorhunt.co/palette/151976
 */
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600');
 
 body {
   background-color: #fff;
@@ -22,10 +22,15 @@ body {
   
   color: #333;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 600;
 }
 
 h1,h2,h3,h4,h5 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 a, a:hover {
@@ -96,7 +101,6 @@ blockquote {
 }
 
 .content .title {
-  font-weight: 700;
   font-size: 1.3em;
   padding-bottom: 10px;
   border-bottom: solid 2px #929aab;
@@ -137,7 +141,6 @@ blockquote {
 }
 
 .footer .title {
-  font-weight: 800;
   font-size: 2em;
 }
 
