@@ -194,8 +194,11 @@ blockquote {
   font-size: 0.8em;
 }
 
-.note-content img,
-.note img {
+.note-content img {
   max-width: 80%;
   max-height: 300px;
+}
+
+.note-content h4 {
+  margin-top: 2rem;
 }

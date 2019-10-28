@@ -17,7 +17,9 @@ description: Older content is found in the <a href="/archive">archive</a>.
       from <a href="{{ post.sourceUrl }}" target="_blank">{{ post.sourceName }} &nbsp;<i class="fas fa-external-link-alt"></i></a>
     </div>
 {%- endif -%}
-    <div markdown="1">
+<div class="note-content">
+  <div markdown="1">
+</div>
 {{ post.content }}
 </div>
 </div>
