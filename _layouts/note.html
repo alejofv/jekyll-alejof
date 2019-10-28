@@ -24,9 +24,9 @@
 
     <meta name="twitter:card" content="summary"></meta>
     <meta name="twitter:creator" content="@{{site.twitter_username}}"></meta>
-    <meta property="og:url" content="{{page.url}}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
     <meta property="og:title" content="{{page.title}}" />
-    <meta property="og:description" content="{{ post.content | strip_html | truncatewords: 30 }}..." />
+    <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 30 }}..." />
 </head>
 
 <body>
