@@ -193,3 +193,9 @@ blockquote {
 .note-meta i {
   font-size: 0.8em;
 }
+
+.note-content img,
+.note img {
+  max-width: 80%;
+  max-height: 300px;
+}
