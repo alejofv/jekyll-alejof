@@ -48,6 +48,7 @@ title: "${note.title}"
 type: "${note.data.Type}"
 sourceUrl: "${note.data.Source || ''}"
 sourceName: "${note.data.SourceName || ''}" 
+comments: true
 ---
 
 ${content}

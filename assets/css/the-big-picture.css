@@ -202,3 +202,8 @@ blockquote {
 .note-content h4 {
   margin-top: 2rem;
 }
+
+.note-comments .title {
+  font-size: 0.8em;
+  font-weight: 700;
+}
