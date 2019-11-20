@@ -18,9 +18,17 @@ description: Older content is found in the <a href="/archive">archive</a>.
     </div>
 {%- endif -%}
 <div class="note-content">
-  <div markdown="1">
-</div>
+{%- if post.type == "link" -%}
+<div markdown="1">
 {{ post.content }}
+</div>
+{%- else -%}
+<div markdown="1">
+{{ post.excerpt }}
+</div>
+<a href="{{ post.url }}"><i class="fas fa-angle-double-right"></i></a>
+{%- endif -%}
+
 </div>
 </div>
 
