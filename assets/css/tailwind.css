@@ -1,0 +1,15 @@
+---
+---
+
+@tailwind base;
+
+p {
+    @apply mb-5;
+}
+
+a {
+    @apply underline;
+}
+
+@tailwind components;
+@tailwind utilities;

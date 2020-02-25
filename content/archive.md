@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: default
 title: Archive
 permalink: /archive/
 description: See the most <a href="/">recent notes</a>.

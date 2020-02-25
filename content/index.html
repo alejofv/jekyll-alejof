@@ -1,0 +1,49 @@
+---
+layout: default
+title: Notes
+permalink: /
+show_navbar: true
+---
+
+<div class="my-8">
+  <p>I post links and comments to interesting things on the internet.</p>
+  <p>Sometimes I write stuff.</p>
+</div>
+
+{% if site.posts.size > 0 %}
+{% for post in site.posts %}
+
+<div class="my-10">
+  <h2 class="text-2xl tracking-tight">
+    <a href="{{ post.url }}" class="no-underline hover:underline">{{ post.title }}</a>
+  </h2>
+
+  {%- if post.type == "link" -%}
+  <div class="text-gray-600 font-narrow mt-2 mb-4">
+    from <a href="{{ post.sourceUrl }}" class="no-underline hover:underline" target="_blank">{{ post.sourceName }} &nbsp;<i
+        class="fas fa-external-link-alt"></i></a>
+  </div>
+  {%- endif -%}
+
+  <div>
+    {%- if post.type == "link" -%}
+    <div markdown="1">
+      {{ post.content }}
+    </div>
+    {%- else -%}
+    <div markdown="1">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ post.url }}"><i class="fas fa-angle-double-right"></i></a>
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% endfor %}
+{% endif %}
+
+<hr class="my-8">
+<div>
+  <p>Older content is found in the <a href="archive">archive</a>.</p>
+</div>
