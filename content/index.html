@@ -1,0 +1,54 @@
+---
+layout: main
+title: Notes
+permalink: /
+show_navbar: true
+---
+
+<p>I post links and comments to interesting things on the internet.</p>
+<p>Sometimes I write stuff.</p>
+
+{% if site.posts.size > 0 %}
+{% for post in site.posts %}
+
+<div class="mt-8 mb-16">
+  <div class="mb-4">
+    <h2 class="text-2xl tracking-tight">
+      <a href="{{ post.url }}" class="no-underline hover:underline">{{ post.title }}</a>
+    </h2>
+
+    {%- if post.type == "link" -%}
+    <span class="inline-block text-gray-700 font-narrow mt-1 mb-2">
+      from <a href="{{ post.sourceUrl }}" class="no-underline hover:underline text-blue-700" target="_blank">{{ post.sourceName }}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline h-3 fill-current">
+          <path d="M10.707 7.05L10 6.343 4.343 12l1.414 1.414L10 9.172l4.243 4.242L15.657 12z"/>
+        </svg>
+      </a>
+      </span>
+    {%- endif -%}
+  </div>
+
+  <div>
+    {%- if post.type == "link" -%}
+    <div markdown="1">
+      {{ post.content }}
+    </div>
+    {%- else -%}
+    <div markdown="1">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ post.url }}" class="text-blue-700 font-narrow no-underline hover:underline">Read more
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline h-3 fill-current">
+        <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
+      </svg>
+    </a>
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% endfor %}
+{% endif %}
+
+<hr class="my-8">
+<p>Older content is found in the <a href="archive">archive</a>.</p>

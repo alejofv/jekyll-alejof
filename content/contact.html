@@ -1,39 +1,51 @@
 ---
-layout: page
+layout: main
 title: Contact
 permalink: /contact
+show_navbar: true
 ---
 
-<p>You can contact me at <a href="mailto:{{site.email}}">{{site.email}}</a>, find me on twitter as <a href="https://twitter.com/{{site.twitter_username}}">@{{site.twitter_username}}</a>, or send me a message using this form:</p>
+<p>You can find me on twitter as <a
+        href="https://twitter.com/{{site.twitter_username}}">@{{site.twitter_username}}</a>, or send me a message using
+    this form:</p>
 
-<div class="login d-flex justify-content-start py-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-lg-10">
-                <form method="post" action="/contact/ty" name="contact" netlify netlify-honeypot="itsatrap">
-                    <div class="form-label-group">
-                        <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Your Email address" required autofocus>
-                        <label for="inputEmail">Email address</label>
-                    </div>
-
-                    <div class="form-label-group">
-                        <input type="text" id="inputName" name="inputName" class="form-control" placeholder="Your name" required> 
-                        <label for="inputName">Name</label>
-                    </div>
-                    
-                    <div class="form-label-group" style="display: none;">
-                        <input type="text" id="itsatrap" name="itsatrap" class="form-control" placeholder="Leave this field empty" />
-                        <label for="itsatrap">Leave this field empty</label>
-                    </div>
-                    
-                    <div class="form-label-group">
-                        <textarea type="text" id="inputMessage" name="inputMessage" class="form-control" placeholder="Your message" rows="3" required></textarea>
-                        <label for="inputMessage">Message</label>
-                    </div>
-
-                    <button class="btn btn-primary btn-contact text-uppercase font-weight-bold mb-2" type="submit">send</button>
-                </form>
-            </div>
+<div class="w-full max-w-md mx-auto">
+    <form method="post" action="/contact/ty" name="contact" class="py-5" netlify netlify-honeypot="itsatrap">
+        <div class="mb-4">
+            <label class="hidden text-gray-700 text-sm font-accent mb-2" for="inputEmail">
+                Your Email
+            </label>
+            <input type="email" id="inputEmail" name="inputEmail" placeholder="Your email address"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                required autofocus>
         </div>
-    </div>
+
+        <div class="mb-4">
+            <label class="hidden text-gray-700 text-sm font-accent mb-2" for="inputName">
+                Your Name
+            </label>
+            <input type="text" id="inputName" name="inputName" placeholder="Your name"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                required autofocus>
+        </div>
+
+        <div class="mb-4 hidden">
+            <label class="hidden text-gray-700 text-sm font-accent mb-2" for="itsatrap">
+                Por favor deja este campo en blanco
+            </label>
+            <input type="text" id="itsatrap" name="itsatrap" placeholder="Your name"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-accent mb-2" for="inputMessage">
+                Your Message
+            </label>
+            <textarea type="text" rows="3" id="inputMessage" name="inputMessage" placeholder="Your message"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </textarea>
+        </div>
+
+        <button class="bg-blue-700 hover:bg-blue-900 text-white font-narrow py-2 px-4 rounded mx-auto focus:outline-none focus:shadow-outline" type="submit">Send</button>
+    </form>
 </div>

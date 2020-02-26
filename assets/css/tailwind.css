@@ -1,0 +1,40 @@
+---
+---
+
+@tailwind base;
+
+p {
+    @apply mb-5;
+}
+
+a {
+    @apply underline;
+}
+
+blockquote {
+    @apply p-4;
+    @apply mb-5;
+    @apply border-l-4;
+    @apply border-gray-400;
+    @apply bg-gray-100;
+    @apply text-gray-700;
+}
+
+blockquote > p {
+    @apply mb-0;
+}
+
+.post-content > h2,
+.post-content > h3,
+.post-content > h4 {
+    @apply font-bold;
+    @apply mt-6;
+    @apply mb-4;
+}
+
+.post-content > h2 {
+    @apply text-xl;
+}
+
+@tailwind components;
+@tailwind utilities;

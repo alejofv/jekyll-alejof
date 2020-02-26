@@ -43,7 +43,7 @@ async function createPost(note) {
     // foreach post, write a post file to be processed by Jekyll
     const filename = `${note.date}-${note.slug}`;
     const fileContent = `---
-layout: note
+layout: post
 title: "${note.title}"
 type: "${note.data.Type}"
 sourceUrl: "${note.data.Source || ''}"
