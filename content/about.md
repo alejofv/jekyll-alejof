@@ -20,7 +20,7 @@ You can find some of the code I've written at my [GitHub][github] profile.
 
 This site was built using [Jekyll][jekyll] and [TailwindCSS][tailwind].
 
-The "notes" content is pulled by a build-time script (before Jekyll builds the site), using a custom-made, super-minimal headless [blog api][notes-api] created by me.
+The "notes" content is pulled by a build-time script (before Jekyll builds the site), using a custom-made, super-minimal [headless blog api][notes-api] created by me.
 
 Title icon made by [xnimrodx][icon-author] from [www.flaticon.com][flaticon].
 
