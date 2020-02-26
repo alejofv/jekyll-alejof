@@ -20,7 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alejof.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alexphi
 github_username:  alexphi
-google_tracking_id: #UA-50199227-3
+google_tracking_id: UA-50199227-3
 disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.

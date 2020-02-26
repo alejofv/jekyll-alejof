@@ -22,7 +22,13 @@ This site was built using [Jekyll][jekyll] and [TailwindCSS][tailwind].
 
 The "notes" content is pulled by a build-time script (before Jekyll builds the site), using a custom-made, super-minimal headless [blog api][notes-api] created by me.
 
+Title icon made by [xnimrodx][icon-author] from [www.flaticon.com][flaticon].
+
+Small link icons from [Zondicons](https://www.zondicons.com/icons.html).
+
 [github]:https://github.com/alexphi
 [notes-api]:https://github.com/alexphi/alejof-notes-api
 [jekyll]:https://jekyllrb.com/
 [tailwind]:https://tailwindcss.com/
+[icon-author]:https://www.flaticon.com/authors/xnimrodx
+[flaticon]:https://www.flaticon.com/
