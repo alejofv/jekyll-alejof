@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: main
 title: About me
 permalink: /about
 show_navbar: true
 picture_url: https://blob.alejof.dev/assets/profile.jpg
 ---
 
-<img src="{{ page.picture_url }}" class="w-40 h-40 object-cover rounded-full mx-auto my-8" alt="profile">
+<img src="{{ page.picture_url }}" class="w-40 h-40 object-cover rounded-full mx-auto" alt="profile">
 
 **TL;DR: I make websites and APIs**
 

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="flex flex-col md:flex-row items-stretch md:items-start justify-start md:justify-between mt-0 md:mt-8 mb-8">
+    <!-- Header -->
+    <a class="flex items-center w-100 overflow-x-visible mb-6 mx-2 no-underline" href="/">
+        <svg id="color" viewBox="0 0 512 512" class="h-16"
+            xmlns="http://www.w3.org/2000/svg">
+            <g><path d="m464 88h-416a40.045 40.045 0 0 0 -40 40v256a40.045 40.045 0 0 0 40 40h416a40.045 40.045 0 0 0 40-40v-256a40.045 40.045 0 0 0 -40-40zm-440 40a24.027 24.027 0 0 1 24-24h416a24.027 24.027 0 0 1 24 24v8h-464zm464 256a24.027 24.027 0 0 1 -24 24h-416a24.027 24.027 0 0 1 -24-24v-232h464z"/><circle cx="48" cy="120" r="8"/><circle cx="72" cy="120" r="8"/><circle cx="96" cy="120" r="8"/><path d="m368 392h64a8 8 0 0 0 0-16h-64a8 8 0 0 0 0 16z"/><path d="m456 392h8a8 8 0 0 0 0-16h-8a8 8 0 0 0 0 16z"/><path d="m219.562 310.656a8 8 0 0 0 11.094-2.218l64-96a8 8 0 0 0 -13.312-8.876l-64 96a8 8 0 0 0 2.218 11.094z"/><path d="m306.879 310.146a8 8 0 0 0 11.267-1.024l40-48a8 8 0 0 0 0-10.244l-40-48a8 8 0 0 0 -12.292 10.244l35.732 42.878-35.732 42.878a8 8 0 0 0 1.025 11.268z"/><path d="m193.854 309.122a8 8 0 0 0 12.292-10.244l-35.732-42.878 35.732-42.878a8 8 0 0 0 -12.292-10.244l-40 48a8 8 0 0 0 0 10.244z"/></g>
+        </svg>
+        <!--
+        Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        -->
+        <div class="ml-4 md:ml-6">
+            <h1 class="text-3xl md:text-4xl">{{site.title}}</h1>
+        </div>
+    </a>
+
+    {% if page.show_navbar %}
+
+    <!-- Nav bar -->
+    <div class="flex justify-between items-center mx-4 mt-0 md:mt-2"> 
+        <a href="/" class="inline-block font-narrow no-underline border-b-4 py-2 px-3 mx-0 md:mx-5 text-gray-700 {% if page.title == 'Notes' %} border-blue-700 {% else %} border-transparent {% endif %}">Notes</a>
+        <a href="/about" class="inline-block font-narrow no-underline border-b-4 py-2 px-3 mx-0 md:mx-5 text-gray-700 {% if page.title == 'About me' %} border-blue-700 {% else %} border-transparent {% endif %}">About</a>
+        <a href="/contact" class="inline-block font-narrow no-underline border-b-4 py-2 px-3 mx-0 md:mx-5 text-gray-700 {% if page.title == 'Contact' %} border-blue-700 {% else %} border-transparent {% endif %}">Contact</a>
+    </div>
+
+    {% endif %}
+</div>
+
+<!-- Page Content -->
+<div class="mx-2 md:max-w-md md:mx-auto">
+    {{content}}
+</div>

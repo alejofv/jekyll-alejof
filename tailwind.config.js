@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     fontFamily:{
       narrow: ['PT Sans Narrow', 'sans-serif'],
-      sans: ['Open Sans', 'sans-serif'],
+      sans: ['PT Sans', 'sans-serif'],
     },
     extend: {
       colors: {
