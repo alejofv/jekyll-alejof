@@ -24,7 +24,7 @@ The "notes" content is pulled by a build-time script (before Jekyll builds the s
 
 Title icon made by [xnimrodx][icon-author] from [www.flaticon.com][flaticon].
 
-Small link icons from [Zondicons](https://www.zondicons.com/icons.html).
+Small link icons from RefactoringUI's [Heroicons](https://github.com/refactoringui/heroicons).
 
 [github]:https://github.com/alexphi
 [notes-api]:https://github.com/alexphi/alejof-notes-api
