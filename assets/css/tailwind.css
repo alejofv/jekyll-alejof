@@ -24,5 +24,17 @@ blockquote > p {
     @apply mb-0;
 }
 
+.post-content > h2,
+.post-content > h3,
+.post-content > h4 {
+    @apply font-bold;
+    @apply mt-6;
+    @apply mb-4;
+}
+
+.post-content > h2 {
+    @apply text-xl;
+}
+
 @tailwind components;
 @tailwind utilities;
