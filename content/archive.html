@@ -17,7 +17,7 @@ show_navbar: true
         {{ post.date | date: "%b %-d, %Y" }}
       </span>
       <span class="block mt-0 mb-6">
-        <a href="{{ post.url }}" class="inline-block mr-2 font-bold no-underline hover:underline">{{ post.title }}</a>
+        <a href="{{ post.url }}" class="inline mr-2 font-bold no-underline hover:underline">{{ post.title }}</a>
 
         <span class="inline text-gray-700">
           {%- if post.type == "link" -%}
