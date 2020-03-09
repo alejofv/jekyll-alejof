@@ -32,7 +32,7 @@ function initDir(dir_path) {
 }
 
 async function createPost(note) {
-    const response = await fetch(`${note.contentUrl}`);
+    const response = await fetch(note.contentUrl);
     if (response.status !== 200) {
         console.log(`could not get content for note: ${note.title}`);
         return;
@@ -58,7 +58,7 @@ ${content}
 }
 
 (async () => {
-    // Netlify build webhook for starkidsworld.co site
+    // Netlify build webhook for the main site
     const apiUrl = `${process.env.CONTENT_API_URL || "http://localhost:7071/api/content"}/alejof-notes`;
     console.log('Content api url:' + apiUrl);
     

@@ -6,7 +6,7 @@ show_navbar: true
 picture_url: https://blob.alejof.dev/assets/profile.jpg
 ---
 
-<img src="{{ page.picture_url }}" class="w-40 h-40 object-cover rounded-full mx-auto" alt="profile">
+<img src="{{ page.picture_url }}" class="object-cover w-40 h-40 mx-auto rounded-full" alt="profile">
 
 **TL;DR: I make websites and APIs**
 
@@ -18,7 +18,7 @@ You can find some of the code I've written at my [GitHub][github] profile.
 
 <hr class="my-8">
 
-This site was built using [Jekyll][jekyll] and [TailwindCSS][tailwind].
+This site was built using [Jekyll][jekyll] and [TailwindCSS][tailwind]. If you're curious, check the [source code](https://github.com/alexphi/jekyll-alejof).
 
 The "notes" content is pulled by a build-time script (before Jekyll builds the site), using a custom-made, super-minimal [headless blog api][notes-api] created by me.
 
