@@ -16,21 +16,18 @@
 title: Alejo F (dev)
 email: alexphi@gmail.com
 description: Software developer
+about_me: "I'm Alejo, a software developer, and this is my personal site. I post links and comments to interesting things on the internet, and sometimes I write stuff."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alejof.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alexphi
 github_username:  alexphi
-google_tracking_id: UA-50199227-3
-disqus:
-    # Leave shortname blank to disable comments site-wide.
-    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: alejof-dev
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-postcss
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
