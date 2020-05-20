@@ -5,15 +5,13 @@ permalink: /archive/
 show_navbar: true
 ---
 
-<h1 class="text-2xl">Archive</h1>
-
 {% if site.posts.size > 0 %}
 <div class="my-10">
   {% for post in site.posts %}
 
   <ul class="spaced-y-6">
     <li>
-      <span class="block text-gray-600 font-narrow mb-0">
+      <span class="block mb-0 text-gray-600 font-narrow">
         {{ post.date | date: "%b %-d, %Y" }}
       </span>
       <span class="block mt-0 mb-6">
