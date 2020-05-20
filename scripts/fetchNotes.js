@@ -32,16 +32,15 @@ function initDir(dir_path) {
 }
 
 async function createPost(note) {
+    console.log(note.name);
+
     const response = await fetch(note.url);
-    if (response.status !== 200) {
-        console.log(`could not get content for note: ${note.url}`);
-        return;
-    }
+    console.log(`fetch ${response.statusText}`);
+    if (response.status !== 200) return;
 
     const content = await response.text()
-    
-    // foreach post, write a post file to be processed by Jekyll
     fs.writeFileSync(`./_posts/${note.name}`, content);
+    console.log('file created!');
 }
 
 (async () => {
@@ -62,6 +61,9 @@ async function createPost(note) {
     const data = await response.json();
     console.log("Note count from api: ", data.length);
 
-    data.forEach(item => createPost(item))
+    for (const item of data) {
+        await createPost(item);
+    }
+    
     console.info('Content fetch completed successfully!')
 })();
