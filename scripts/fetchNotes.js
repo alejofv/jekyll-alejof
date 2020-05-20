@@ -32,37 +32,26 @@ function initDir(dir_path) {
 }
 
 async function createPost(note) {
-    const response = await fetch(note.contentUrl);
+    const response = await fetch(note.url);
     if (response.status !== 200) {
-        console.log(`could not get content for note: ${note.title}`);
+        console.log(`could not get content for note: ${note.url}`);
         return;
     }
 
     const content = await response.text()
     
     // foreach post, write a post file to be processed by Jekyll
-    const filename = `${note.date}-${note.slug}`;
-    const fileContent = `---
-layout: post
-title: "${note.title}"
-type: "${note.data.Type}"
-sourceUrl: "${note.data.Source || ''}"
-sourceName: "${note.data.SourceName || ''}" 
-comments: true
----
-
-${content}
-`;
-    
-    fs.writeFileSync(`./_posts/${filename}.md`, fileContent);
+    fs.writeFileSync(`./_posts/${note.name}`, content);
 }
 
 (async () => {
-    // Netlify build webhook for the main site
+    const dir = '_posts';
+    initDir(dir);
+
+    // AlejoF notes api endpoint
     const apiUrl = `${process.env.CONTENT_API_URL || "http://localhost:7071/api/content"}/alejof-notes`;
-    console.log('Content api url:' + apiUrl);
-    
     const apiKey = process.env.CONTENT_API_KEY;
+    console.log('Content api url:' + apiUrl);
     
     // fetch the live data source
     const response = await fetch(`${apiUrl}?code=${apiKey}`);
@@ -72,15 +61,7 @@ ${content}
     
     const data = await response.json();
     console.log("Note count from api: ", data.length);
-    
-    const dir = '_posts';
-    initDir(dir);
 
-    for (let i = 0; i < data.length; i++) {
-        const note = data[i];
-        
-        await createPost(note);
-    }
-
+    data.forEach(item => createPost(item))
     console.info('Content fetch completed successfully!')
 })();
