@@ -1,9 +1,12 @@
 <!-- Nav bar -->
 <div class="flex mt-0 space-x-8">
     <a href="/"
-        class="inline-block font-narrow no-underline {% if page.title == 'Notes' %} text-gray-500 {% else %} text-gray-700 {% endif %}">Notes</a>
+        class="inline-block font-narrow no-underline {% if page.title == 'Notes' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
+        {% if page.title == "Notes" %} aria-current="page" {% endif %}>Notes</a>
     <a href="/about"
-        class="inline-block font-narrow no-underline {% if page.title == 'About me' %} text-gray-500 {% else %} text-gray-700 {% endif %}">About</a>
+        class="inline-block font-narrow no-underline {% if page.title == 'About me' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
+        {% if page.title == "About me" %} aria-current="page" {% endif %}>About</a>
     <a href="/archive"
-        class="inline-block font-narrow no-underline {% if page.title == 'Archive' %} text-gray-500 {% else %} text-gray-700 {% endif %}">Archive</a>
+        class="inline-block font-narrow no-underline {% if page.title == 'Archive' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
+        {% if page.title == "Archive" %} aria-current="page" {% endif %}>Archive</a>
 </div>
