@@ -1,7 +1,7 @@
 ---
 layout: main
 title: About me
-permalink: /about
+permalink: /about/
 show_navbar: true
 picture_url: /assets/images/profile.jpg
 ---
