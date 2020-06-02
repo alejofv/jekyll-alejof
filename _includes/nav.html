@@ -1,12 +1,12 @@
 <!-- Nav bar -->
-<div class="flex mt-0 space-x-8">
+<nav class="flex justify-between py-2 space-x-8 md:justify-start">
     <a href="/"
-        class="inline-block font-narrow no-underline {% if page.title == 'Notes' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
+        class="inline-block font-narrow {% if page.title == 'Notes' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
         {% if page.url == "/" %} aria-current="page" {% endif %}>Notes</a>
     <a href="/about"
-        class="inline-block font-narrow no-underline {% if page.title == 'About me' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
-        {% if page.url == "/about" %} aria-current="page" {% endif %}>About</a>
+        class="inline-block font-narrow {% if page.title == 'About me' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
+        {% if page.url == "/about" %} aria-current="page" {% endif %}>About me</a>
     <a href="/archive"
-        class="inline-block font-narrow no-underline {% if page.title == 'Archive' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
+        class="inline-block font-narrow {% if page.title == 'Archive' %} text-gray-500 {% else %} text-gray-700 {% endif %}"
         {% if page.url == "/archive" %} aria-current="page" {% endif %}>Archive</a>
-</div>
+</nav>
