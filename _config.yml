@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Alejo F (dev)
+title: alejof.dev
 email: alexphi@gmail.com
 description: Software developer
 about_me: "Hey! I'm Alejo, a software developer, and this is my personal site. I post links and comments to interesting things on the internet, and sometimes I write stuff."

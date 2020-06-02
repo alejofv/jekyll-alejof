@@ -7,27 +7,13 @@ layout: default
     <a class="flex items-center no-underline" href="/">
 
         <div class="flex-grow md:text-xl">
-            <span class="block text-gray-600">{{site.title}}</span>
+            <span class="block my-1 text-gray-600">{% include logo.html class="h-4 md:h-6" %}</span>
             <span class="block text-sm text-gray-600">{{ page.date | date: "%b %-d, %Y" }}</span>
         </div>
 
-        <svg id="color" viewBox="0 0 512 512" class="h-12" xmlns="http://www.w3.org/2000/svg">
-            <g>
-                <path
-                    d="m464 88h-416a40.045 40.045 0 0 0 -40 40v256a40.045 40.045 0 0 0 40 40h416a40.045 40.045 0 0 0 40-40v-256a40.045 40.045 0 0 0 -40-40zm-440 40a24.027 24.027 0 0 1 24-24h416a24.027 24.027 0 0 1 24 24v8h-464zm464 256a24.027 24.027 0 0 1 -24 24h-416a24.027 24.027 0 0 1 -24-24v-232h464z" />
-                <circle cx="48" cy="120" r="8" />
-                <circle cx="72" cy="120" r="8" />
-                <circle cx="96" cy="120" r="8" />
-                <path d="m368 392h64a8 8 0 0 0 0-16h-64a8 8 0 0 0 0 16z" />
-                <path d="m456 392h8a8 8 0 0 0 0-16h-8a8 8 0 0 0 0 16z" />
-                <path
-                    d="m219.562 310.656a8 8 0 0 0 11.094-2.218l64-96a8 8 0 0 0 -13.312-8.876l-64 96a8 8 0 0 0 2.218 11.094z" />
-                <path
-                    d="m306.879 310.146a8 8 0 0 0 11.267-1.024l40-48a8 8 0 0 0 0-10.244l-40-48a8 8 0 0 0 -12.292 10.244l35.732 42.878-35.732 42.878a8 8 0 0 0 1.025 11.268z" />
-                <path
-                    d="m193.854 309.122a8 8 0 0 0 12.292-10.244l-35.732-42.878 35.732-42.878a8 8 0 0 0 -12.292-10.244l-40 48a8 8 0 0 0 0 10.244z" />
-            </g>
-        </svg>
+        <div class="text-gray-600">
+            {% include icon.html class="h-12" %}
+        </div>
         <!--
         Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         -->
