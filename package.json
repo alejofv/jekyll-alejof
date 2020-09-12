@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/alexphi/jekyll-alejof#readme",
   "dependencies": {
-    "node-fetch": "^2.5.0",
+    "node-fetch": "^2.6.1",
     "postcss-cli": "^7.1.0",
     "tailwindcss": "^1.4.6"
   }
