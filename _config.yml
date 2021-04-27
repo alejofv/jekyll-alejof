@@ -20,7 +20,7 @@ about_me: "Hey! I'm Alejo, a software developer, and this is my personal site. I
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alejof.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alexphi
-github_username:  alexphi
+github_username:  alejofigueroa
 
 # Build settings
 markdown: kramdown
